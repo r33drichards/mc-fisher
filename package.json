@@ -1,0 +1,17 @@
+{
+  "name": "mc-fisher",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "minecraft-data": "^3.0.0",
+    "mineflayer": "^4.33.0",
+    "mineflayer-auto-eat": "^5.0.3"
+  }
+}
