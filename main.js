@@ -45,10 +45,12 @@ bot.once('spawn', () => {
   })
 
   // Start periodic weather command (every 60 seconds)
-  setInterval(() => {
-    console.log('\n[COMMAND] Executing /weather rain')
-    bot.chat('/weather rain')
-  }, 60000)
+  if (process.env.SET_WEATHER==='true'){
+    setInterval(() => {
+      console.log('\n[COMMAND] Executing /weather rain')
+      bot.chat('/weather rain')
+    }, 60000)
+  }
 
   // Start manual fishing test after 3 seconds
   setTimeout(async () => {
